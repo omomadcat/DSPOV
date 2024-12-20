@@ -1,18 +1,13 @@
 plugins {
-    kotlin("jvm") version "2.0.21"
+    id("com.utopia-rise.godot-kotlin-jvm") version "0.6.0" // Adjust version to match the latest
+    kotlin("jvm") version "1.9.0"
 }
-
-group = "org.example"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
+    implementation(kotlin("stdlib"))
+    // Additional Godot Kotlin/JVM dependencies
 }
